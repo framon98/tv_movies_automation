@@ -1,0 +1,10 @@
+directories:
+    update:
+        source: \path\of\source\folder
+        destination: \path\of\destination
+    extraction:
+        source: \path\of\source\folder
+        destination: \path\of\destination
+
+rar_tool:
+    path: \Path\to\rar\exe
