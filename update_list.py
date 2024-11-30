@@ -144,7 +144,7 @@ if __name__ == "__main__":
     with open("config.yml", "r") as ymlfile:
         cfg = yaml.load(ymlfile, Loader=yaml.SafeLoader)
     SeriesList = List_Creator()
-    SeriesList.set_dirs(cfg["directories"]["source"], cfg["directories"]["destination"])
+    SeriesList.set_dirs(cfg["directories"]["update"]["source"], cfg["directories"]["update"]["destination"])
     SeriesList.filename_reader()
     SeriesList.list_movies()
     SeriesList.list_shows()
