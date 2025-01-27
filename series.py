@@ -94,7 +94,7 @@ class Tvseries:
                     elif "2160p" in episode:
                         epi = re.search(r"(^.*?)(2160.*?)WEB.*?-(.*?.mkv)", episode)
                     elif "720p" in episode:
-                        epi = re.search(r"(^.*?)720.*?-(.*?.mkv)", episode)
+                        epi = re.search(r"(^.*?)(?:720p|720p\.10bit)(?:\.WEB-DL|\.WEBRip|\.).*?-(.*?.mkv)", episode)
                     # if epi is None:
 
                     first_part = epi.group(1)
